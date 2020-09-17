@@ -5,6 +5,7 @@
 let input = 880;
 
 // ---------- Storage Banknotes + Stop Switch ----------
+// ---------- Change Numbers To Fill Up! ---------
 
 let hundretNote = 15;
 let fiftyNote = 2;
@@ -26,21 +27,25 @@ if (input > availableAmount) {
 if (hundretNote < 10) {
   hundretNote = false;
   console.log("please refill");
+  // Optional
   console.log("We are short on 100€ notes, are 50€ notes also ok?");
 }
 if (fiftyNote < 10) {
   fiftyNote = false;
   console.log("please refill");
+  // Optional
   console.log("We are short on 50€ notes, are 20€ notes also ok?");
 }
 if (twentyNote < 10) {
   twentyNote = false;
   console.log("please refill");
+  // Optional
   console.log("We are short on 20€ notes, are 10€ notes also ok?");
 }
 if (tenNote < 10) {
   tenNote = false;
   console.log("please refill");
+  // Optional
   console.log("We are short on 10€ notes, pls take another amount!");
 }
 
@@ -61,6 +66,7 @@ let inputSafe = input;
 // ---------- Withdraw Notes -----------
 
 while (input != 0) {
+  // KillSwitch
   if (stop == false) {
     break;
   } else if (input > 100 && hundretNote) {
@@ -88,19 +94,21 @@ while (input != 0) {
     input = input % 10;
     console.log("you get " + roundTen + " ten euro notes");
   } else {
+    // Note Calculator --> What can this ATM still provide
     console.log("We can provide you with " + (inputSafe - input) + "€");
     break;
   }
 }
+
 // ---------- How Many Notes Are Left ----------
 
 console.log(
-  "hundretNote = " +
+  "100€ = " +
     hundretNote +
-    "///fiftyNote = " +
+    "/// 50€ = " +
     fiftyNote +
-    "///twentyNote = " +
+    "/// 20€ = " +
     twentyNote +
-    "///tenNote" +
+    "/// 10€ = " +
     tenNote
 );
