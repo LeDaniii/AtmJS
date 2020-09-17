@@ -69,21 +69,21 @@ console.log(multiarray[2][1]);
 console.log(multiarray[5][3]);
 console.log(multiarray[2][3]);
 
-let viennaArray = [
-  ["Vienna", "\t", "\t", "\t", "\t"],
-  ["\t", "is", " ", " ", " "],
-  ["\t", "\t", "a", "27", "0"],
-  ["\t", "\t", "\t", "nice"],
-  ["\t", "\t", "\t", "\t", "city"],
-];
-document.write("<br>");
-document.write("<br>" + viennaArray[0][0]);
-document.write("<br>" + viennaArray[0][1] + viennaArray[1][1]);
-document.write("<br>" + viennaArray[2][2]);
-document.write("<br>" + viennaArray[3][3]);
-document.write("<br>" + viennaArray[4][4]);
+// let viennaArray = [
+//   ["Vienna", "\t", "\t", "\t", "\t"],
+//   ["\t", "is", " ", " ", " "],
+//   ["\t", "\t", "a", "27", "0"],
+//   ["\t", "\t", "\t", "nice"],
+//   ["\t", "\t", "\t", "\t", "city"],
+// ];
+// document.write("<br>");
+// document.write("<br>" + viennaArray[0][0]);
+// document.write("<br>" + viennaArray[0][1] + viennaArray[1][1]);
+// document.write("<br>" + viennaArray[2][2]);
+// document.write("<br>" + viennaArray[3][3]);
+// document.write("<br>" + viennaArray[4][4]);
 
-console.log(viennaArray);
+// console.log(viennaArray);
 
 let text =
   "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$properties $flow$down;$actions$flow$up";
