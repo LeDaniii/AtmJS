@@ -7,11 +7,11 @@ let input = 880;
 // ---------- Storage Banknotes + Stop Switch ----------
 // ---------- Change Numbers To Fill Up! ---------
 
-let hundretNote = 15;
-let fiftyNote = 2;
-let twentyNote = 2;
-let tenNote = 2;
-let stop = true;
+let hundretNote = 200;
+let fiftyNote = 200;
+let twentyNote = 200;
+let tenNote = 200;
+let stop = false;
 
 // ---------- Do We Have Enough Banknotes? ----------
 
@@ -19,7 +19,7 @@ let availableAmount =
   hundretNote * 100 + fiftyNote * 50 + twentyNote * 20 + tenNote * 10;
 
 if (input > availableAmount) {
-  stop = false;
+  stop = true;
   console.log("Please refill");
   console.log("We don't have enough money for you We are sincerely Sorry");
   console.log("Out of Service");
@@ -49,7 +49,7 @@ if (tenNote < 10) {
   console.log("We are short on 10€ notes, pls take another amount!");
 }
 
-// ---------- FAIL SECTION ----------
+// ---------- FAIL SECTION --> only here to laugh about it ----------
 // ---------- Round Counter For Amount Calculation If There Is Something Left ---> Prompt: Use This Amount ----------
 
 // Counter 100
@@ -67,7 +67,7 @@ let inputSafe = input;
 
 while (input != 0) {
   // KillSwitch
-  if (stop == false) {
+  if (stop == true) {
     break;
   } else if (input > 100 && hundretNote) {
     let hundret = input / 100;
